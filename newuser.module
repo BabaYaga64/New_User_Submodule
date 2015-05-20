@@ -1,0 +1,19 @@
+<?php 
+	function newuser_menu() {
+		$items = array();
+		$items['user_success'] = array(
+			'title' => 'new user',
+			'page callback' => 'user_function',
+			'access callback' => TRUE,
+			'type' => MENU_CALLBACK,
+		);
+		return $items;
+	}
+
+function hello_user_insert() {
+	$_GET['destination'] = 'user_success';
+}
+
+function user_function() {
+	return '<p>You just added a new user!</p>';
+}

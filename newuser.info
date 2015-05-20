@@ -1,0 +1,5 @@
+name = newuser
+description = shows admin a success message after creating a new user.
+package = Epicodus Example
+core = 7.x
+files[] = newuser.module
